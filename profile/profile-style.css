@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+h1{
+    color: lightseagreen;
+    background-color: lightcyan;
+}
+.font-blue{
+    color:darkslateblue;
+    font-size: 40px;
+}
+
+li{
+    color: gray;
+    font-size: 25px;
+}
+
+img{
+    width: 50%;
+}
+div{
+    background-color: ;
+    font-family: 'Courier New', Courier, monospace;
+}
+span{
+    font-size: 35px;
+    color: gray;
+    color: dodgerblue;
+}
