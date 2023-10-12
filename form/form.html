@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>入力フォーム</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+
+<body>
+    <form action="#" method="post" enctype="multipart/form-data"></form>
+    <h1>会員登録</h1>
+    <p>以下の情報を入力し、確認ボタンを押してください。</p>
+
+    <fieldset>
+        <legend>お客様情報</legend>
+        <div class="list">
+            <span class="col">姓</span>:<input type="text" name="last_name"><br>
+            <span class="col">名</span>:<input type="text" name="first_name"><br>
+            <span class="col">住所</span>:</span><input type="text" name="address"><br>
+            <span class="col">メールアドレス</span>:<input type="email" name="email"><br>
+            <span class="col">電話番号</span>:<input type="tel" name="tel"><br>
+            <span class="col">生年月日</span>:<input type="date" name="birthday" value="1990-01-01"><br>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>パスワード</legend>
+        英数字8文字以上で入力してください。<br>
+        <input type="password" name="password"><br>
+        <input type="password" name="password_confirm"><br>
+    </fieldset>
+    <fieldset>
+        <legend>希望メールマガジン</legend>
+        <label>  IT<input type="checkbox" name="magazine" value="1"></label>
+        <label>  営業<input type="checkbox" name="magazine" value="2"></label>
+        <label>  接客<input type="checkbox" name="magazine" value="3"></label>
+        <label>  医療<input type="checkbox" name="magazine" value="4"></label>
+    </fieldset>
+    <fieldset>
+        <legend>利用規約</legend>
+        <a class="rem" href="terms.html" target="_blank"> 利用規約を確認する</a><br>
+        <label><input type="radio" name="terms" value="agree">規約に同意する</label>
+    </fieldset>
+    <button type="submit">内容をクリアする</button>
+    <button type="reset">確認する</button>
+
+</body>
+
+</html>
