@@ -1,0 +1,37 @@
+@charset "utf-8";
+table,tr,td,th{
+    border: darkblue solid 3px;
+    border-collapse: collapse;
+}
+
+tr,td,th{
+    border: darkblue solid 1.5px;
+    border-collapse: collapse;
+}
+th{
+    font-size: large;
+    background-color: lavender;
+    text-align: left;
+    vertical-align: top;
+}
+td{
+    font-size: large;
+    width: 60%;
+    background-color: ghostwhite;
+}
+.req{
+    font-size: smaller;
+    color: white;
+    background-color: lightcoral;
+    border-radius: 10%;
+}
+.font-small{
+    font-size: small;
+    color: darkblue;
+}
+th,td{
+    padding: 10px;
+}
+div{
+    margin: 2%;
+}
