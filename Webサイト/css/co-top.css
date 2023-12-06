@@ -1,0 +1,53 @@
+h1{
+    text-align: center;
+    background: linear-gradient(transparent 70%, #a7d6ff 70%);
+    color: navy;
+}
+
+h3{
+    text-align: center;
+}
+.li{
+    width: 400px;
+    margin: auto;
+}
+.li li{
+    list-style-position: outside;
+    list-style-image: url(../img/icon_036010_16.png);
+    text-decoration: none;
+}
+li a{
+    text-decoration: none;
+}
+.img{
+    text-align: center;
+    margin: 3rem;
+}
+.img img{
+    width: 600px;
+    height: 300px;
+}
+
+h2{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    background: linear-gradient(transparent 70%, #94abdb 70%);
+
+}
+h5 {
+    width: 60%;
+    margin: auto;
+}
+h5 p{
+    line-height: 2.5rem;
+    color: steelblue;
+}
+#dezi{
+    font-weight: bold;
+    color: darkblue;
+}
+#any{
+    font-weight: bold;
+    color: darkblue;
+}

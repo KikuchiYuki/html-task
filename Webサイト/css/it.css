@@ -1,0 +1,48 @@
+body{
+    margin: auto;
+}
+table{
+    border: solid 2px black;
+    border-collapse: collapse;
+    margin: auto;
+    width: 80%;
+    background-color: aliceblue;
+}
+thead th{
+    border: solid 2px royalblue;
+    background-color: cornflowerblue;
+    color: aliceblue;
+}
+tbody tr td{
+    border: solid 2px royalblue;
+    color: darkblue;
+}
+td {
+    margin: 0 auto;
+    padding: 0.5em;
+}
+.center{
+   text-align: center;
+   margin: 0 auto;
+}
+h1{
+    text-align: center;
+    background: linear-gradient(transparent 70%, #a7d6ff 70%);
+    color: navy;
+}
+.it .a{
+    display: block;
+    text-align: right;
+    margin: 2rem;
+}
+.it .a a{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: aliceblue;
+    border: lightgray 1.5px solid;
+}
+p{
+    text-align: center;
+    font-size: larger;
+}
+

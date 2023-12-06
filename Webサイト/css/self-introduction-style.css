@@ -1,0 +1,28 @@
+/*記述済みの部分は変更しないでください！*/
+
+@charset "utf-8";
+
+.mark-list {
+    list-style: "★";
+}
+.mark-list li{
+    font-size: larger;
+    border-bottom: darkblue;
+    background: lightcyan;
+    color: darkblue;
+    font-weight: bolder;
+    margin: 0.5rem;
+}
+body{
+    line-height: 2.5rem;
+    color: rgb(37, 72, 179);
+    font-weight: bolder;
+    font-size: larger;
+}
+h1{
+    text-align: center;
+    background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
+div{
+    margin-left: 3rem;
+}
