@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.container{
+    padding-bottom: 50px;
+}
+
+h3{
+    color: #333;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 20px;
+    
+}
+
+.mv{
+    padding-top: 20px;
+    margin: auto;
+    padding-left: 30px;
+}
+
+.song{
+    padding-top: 30px;
+    height: 200px;
+    width: 370px;
+    overflow-y: auto;
+    margin: auto;
+}
+
+.song::-webkit-scrollbar{
+    display: none;
+}
+
+#music .container{
+    margin: auto;
+}
+
+
+
+img{
+    width: 350px;
+    height: 215px;
+}

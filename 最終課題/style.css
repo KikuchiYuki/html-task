@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+
+* {
+    font-family: 'Noto Serif JP', serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+#index {
+    background-image: url(img/index背景.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+#event,
+#music {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#event::before,
+#music::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* 半透明の黒 */
+    z-index: -1;
+    /* 他の要素よりも背面に配置 */
+}
+
+/* 以下は元の背景画像の設定 */
+#event,
+#music {
+    background-image: url(img/背景白.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+#index:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/index背景.png"); /* 背景画像を設定 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: saturate(250%); /* 彩度を上げる */
+    z-index: -1;
+}
+
+#index::before {
+    filter: none; /* ホバー時にフィルターを削除して元の状態に戻す */
+}
+
+
+#index main {
+    margin: auto;
+    margin-top: 130px;
+    height: 340px;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px); /* 背景色をぼかす */
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1); /* ふちをぼかす */
+}
+
+
+#index main p{
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+span {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.yellow {
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgba(255, 255, 180, 0.8);
+}
+
+.maru {
+    border-radius: 30%;
+}
+
+.link {
+    display: flex;
+    margin-left: 1000px;
+}
+
+.twitter:hover {
+    filter: brightness(80%);
+}
+
+.link a {
+    margin-left: 20px;
+}
+
+aside {
+    margin-left: 20px;
+    font-size: 25px;
+    padding: 15px;
+    width: 140px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+}
+
+li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: width 0.3s ease;
+}
+
+li a:hover::before {
+    width: 100%;
+}
+
+
+.blue {
+    text-decoration: none;
+    color: rgba(181, 255, 255, 0.8);
+    display: block;
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blue::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgba(181, 255, 255, 0.8);
+    transition: width 0.3s ease;
+}
+
+.blue:hover::before {
+    width: 100%;
+}
+
+
+
+#page-top a {
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff3f3f;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.6rem;
+    transition: all 0.3s;
+}
+
+#page-top a:hover {
+    background: #777;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+    /*はじめは非表示*/
+    opacity: 0;
+    transform: translateY(80px);
+}
+
+/*　上に上がる動き　*/
+
+#page-top.UpMove {
+    animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*　下に下がる動き　*/
+
+#page-top.DownMove {
+    animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+}
+
+
+.blue{
+    color: rgb(181, 255, 255);
+}
